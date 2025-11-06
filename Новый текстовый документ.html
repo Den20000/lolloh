@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный пример фишинговой страницы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .warning-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 600px;
+            text-align: center;
+            border-left: 5px solid #ff4444;
+        }
+        h1 {
+            color: #ff4444;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .message {
+            background-color: #fff8f8;
+            border: 1px solid #ffcccc;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .educational-note {
+            background-color: #f8f8ff;
+            border: 1px solid #ccccff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 25px;
+            text-align: left;
+        }
+        .educational-note h3 {
+            color: #4444ff;
+            margin-top: 0;
+        }
+        ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="warning-container">
+        <h1>ВНИМАНИЕ: Учебный пример фишинга</h1>
+        
+        <div class="message">
+            <strong>Поздравляю, лошара. Только что твои данные украли.</strong>
+        </div>
+        
+        <p>Это пример того, как может выглядеть фишинговая страница.</p>
+        
+        <div class="educational-note">
+            <h3>Как защититься от фишинга:</h3>
+            <ul>
+                <li>Никогда не вводите личные данные на подозрительных сайтах</li>
+                <li>Проверяйте URL-адрес в адресной строке</li>
+                <li>Ищите признаки безопасности (HTTPS, значок замка)</li>
+                <li>Не переходите по ссылкам в подозрительных письмах</li>
+                <li>Используйте двухфакторную аутентификацию</li>
+                <li>Установите антивирусное ПО и фаервол</li>
+            </ul>
+        </div>
+        
+        <p>
+            <button class="button" onclick="showMoreInfo()">Узнать больше о защите</button>
+        </p>
+    </div>
+
+    <script>
+        function showMoreInfo() {
+            alert("Фишинг - это вид интернет-мошенничества, целью которого является получение доступа к конфиденциальным данным пользователей. Будьте бдительны!");
+        }
+    </script>
+</body>
+</html>
