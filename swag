@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт с котиками для несварения знаний</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e6d5b8 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            color: #4a2c2c;
+            text-shadow: 4px 4px 0 #d4a59a;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            text-align: center;
+            border-bottom: 5px solid #b5835a;
+            padding-bottom: 15px;
+            max-width: 800px;
+        }
+        
+        h2 {
+            font-size: 2em;
+            color: #3d1e1e;
+            text-align: center;
+            margin-bottom: 40px;
+            background-color: #ffe3d0;
+            padding: 15px;
+            border-radius: 50px;
+            box-shadow: 0 6px 0 #b5835a;
+        }
+        
+        .main-message {
+            font-size: 3.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff6b6b;
+            background-color: #fff;
+            padding: 30px;
+            border: 8px dashed #4ecdc4;
+            border-radius: 20px;
+            margin: 30px;
+            text-align: center;
+            transform: rotate(-2deg);
+            box-shadow: 10px 10px 0 #556270;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        
+        .cat-card {
+            background-color: #fff8f0;
+            border: 5px solid #c4a27a;
+            border-radius: 15px;
+            padding: 15px;
+            width: 280px;
+            box-shadow: 0 10px 0 #8b6b4f;
+            transition: transform 0.3s;
+        }
+        
+        .cat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 0 #8b6b4f;
+        }
+        
+        .cat-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #dbb68c;
+        }
+        
+        .cat-card p {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4a2c2c;
+            margin: 10px 0;
+            text-align: center;
+        }
+        
+        .warning {
+            font-size: 2em;
+            font-weight: bold;
+            color: #8b0000;
+            background-color: #ffcccb;
+            padding: 20px;
+            margin: 30px;
+            border-left: 10px solid #ff0000;
+            text-align: center;
+            max-width: 800px;
+        }
+        
+        footer {
+            font-size: 1.5em;
+            color: #6b4f3a;
+            margin: 40px;
+            padding: 20px;
+            background-color: #ffe3d0;
+            border-radius: 10px;
+        }
+        
+        .footer-highlight {
+            font-size: 2em;
+            font-weight: bold;
+            color: #b94e4e;
+        }
+    </style>
+</head>
+<body>
+    <h1>😺 ЭТОТ САЙТ С КОТИКАМИ 😺</h1>
+    <h2>Поможет вам не усвоить никакой материал!</h2>
+    
+    <div class="main-message">
+        🚫 ЗАБУДЬ ОБ УЧЁБЕ! 🚫<br>
+        ЗДЕСЬ ТОЛЬКО КОТЫ!
+    </div>
+    
+    <div class="gallery">
+        <div class="cat-card">
+            <img src="https://cataas.com/cat?1" alt="Котик 1" onerror="this.src='https://placekitten.com/280/200'">
+            <p>СЕРЬЁЗНЫЙ КОТ</p>
+        </div>
+        
+        <div class="cat-card">
+            <img src="https://cataas.com/cat?2" alt="Котик 2" onerror="this.src='https://placekitten.com/281/200'">
+            <p>СОННЫЙ КОТ</p>
+        </div>
+        
+        <div class="cat-card">
+            <img src="https://cataas.com/cat?3" alt="Котик 3" onerror="this.src='https://placekitten.com/282/200'">
+            <p>УДИВЛЁННЫЙ КОТ</p>
+        </div>
+        
+        <div class="cat-card">
+            <img src="https://cataas.com/cat?4" alt="Котик 4" onerror="this.src='https://placekitten.com/283/200'">
+            <p>ВАЖНЫЙ КОТ</p>
+        </div>
+        
+        <div class="cat-card">
+            <img src="https://cataas.com/cat?5" alt="Котик 5" onerror="this.src='https://placekitten.com/284/200'">
+            <p>ИГРИВЫЙ КОТ</p>
+        </div>
+        
+        <div class="cat-card">
+            <img src="https://cataas.com/cat?6" alt="Котик 6" onerror="this.src='https://placekitten.com/285/200'">
+            <p>ЗАГАДОЧНЫЙ КОТ</p>
+        </div>
+    </div>
+    
+    <div class="warning">
+        ⚠️ ВНИМАНИЕ! ⚠️<br>
+        ПРОДОЛЖИТЕЛЬНЫЙ ПРОСМОТР КОТИКОВ<br>
+        ПРИВОДИТ К ПОЛНОМУ ОТСУТСТВИЮ ЗНАНИЙ!
+    </div>
+    
+    <footer>
+        <span class="footer-highlight">🐱 100% АНТИОБРАЗОВАТЕЛЬНЫЙ КОНТЕНТ 🐱</span><br>
+        <br>
+        *Ни один учебник не пострадал при создании этого сайта<br>
+        **Котики одобряют ваше решение ничего не учить
+    </footer>
+    
+    <!-- Скрытое сообщение для тех, кто смотрит код -->
+    <!-- P.S. Котики всё равно лучше учебников! Мяу! -->
+</body>
+</html>
